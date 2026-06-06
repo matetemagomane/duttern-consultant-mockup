@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Team | Duttern Consultant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="image/Duttern Consultant Logo.jpg" alt="Duttern Consultant" class="brand-logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html#hero-content">Home</a>
+            <a href="#services-grid">Services</a>
+            <a href="#team-section">Our Team</a>
+            <a href="#contact-promo" class="nav-cta">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services-grid" class="container">
+            <h2 class="section-title">Our Core Offerings</h2>
+            <p class="section-subtitle">Tailored, enterprise-grade IT solutions engineered to drive business growth.</p>
+
+            <div class="grid-layout">
+                <div class="service-card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Managed IT Support</h3>
+                    <p>We act as your internal IT department, monitoring your systems 24/7 to catch and resolve network issues before they disrupt operations.</p>
+                    <ul>
+                        <li>24/7 Remote Helpdesk & On-Site Support</li>
+                        <li>Proactive Patch Management & Security Updates</li>
+                        <li>Network Monitoring & Hardware Lifecycle Management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Data Security</h3>
+                    <p>Protecting your digital assets is non-negotiable. Our frameworks ensure your proprietary data remains safe against evolving cyber threats.</p>
+                    <ul>
+                        <li>Vulnerability Assessments & Penetration Testing</li>
+                        <li>Managed Firewall & Endpoint Protection Layouts</li>
+                        <li>Employee Security Awareness & Phishing Runs</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">☁️</div>
+                    <h3>Cloud Strategy</h3>
+                    <p>Transition away from restrictive local hardware. We design custom cloud environments allowing secure collaboration from anywhere.</p>
+                    <ul>
+                        <li>Cloud Readiness Auditing & Migration Roadmaps</li>
+                        <li>AWS / Azure / Google Cloud Architecture Deployments</li>
+                        <li>Automated Real-Time Backups & Recovery Outlines</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">📊</div>
+                    <h3>IT Infrastructure & Strategy</h3>
+                    <p>Technology should drive growth. We provide high-level technical consultation to map out an architectural roadmap that scales natively.</p>
+                    <ul>
+                        <li>Virtual CIO (vCIO) Systems & Resource Layouts</li>
+                        <li>Network Overhauls & Physical Server Virtualization</li>
+                        <li>Business Continuity Planning & Post-Audit Protocols</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="team-section" class="dark-section">
+            <div class="container">
+                <h2 class="section-title text-white">The Creative Team</h2>
+                <p class="section-subtitle text-muted">The specialists building and managing your minimalistic front-end and strategies.</p>
+
+                <div class="team-hierarchy">
+                    <div class="team-tier tier-1">
+                        <div class="team-card" data-insight="Focuses on long-term client technology roadmaps.">
+                            <h4>Lerato Khumalo</h4>
+                            <span class="role">Lead IT Strategist</span>
+                        </div>
+                    </div>
+
+                    <div class="team-tier tier-2">
+                        <div class="team-card" data-insight="Built the HTML/CSS/JS for the minimalistic front-end.">
+                            <h4>Johan van der Merwe</h4>
+                            <span class="role">Full-Stack Developer</span>
+                        </div>
+                        <div class="team-card" data-insight="Responsible for the clean, Navy Blue and White visual aesthetic.">
+                            <h4>Zanele Dlamini</h4>
+                            <span class="role">UI/UX Designer</span>
+                        </div>
+                        <div class="team-card" data-insight="Developed the content and strategy for Cloud Migrations.">
+                            <h4>David Miller</h4>
+                            <span class="role">Cloud Architect</span>
+                        </div>
+                        <div class="team-card" data-insight="Wrote the SEO-friendly footer and homepage copy.">
+                            <h4>Thandiwe Ndlovu</h4>
+                            <span class="role">Marketing & SEO Expert</span>
+                        </div>
+                    </div>
+
+                    <div class="team-tier tier-3">
+                        <div class="team-card" data-insight="Focuses on defining the Data Security service offering content.">
+                            <h4>Sipho Mokoena</h4>
+                            <span class="role">Cybersecurity Specialist</span>
+                        </div>
+                        <div class="team-card" data-insight="Manages the 24/7 Helpdesk team and client support.">
+                            <h4>Pieter de Villiers</h4>
+                            <span class="role">Managed Services Lead</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="insight-display" class="insight-box">
+                    Hover over a team member to reveal their operational focus.
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-promo" class="container text-center">
+            <h2>Ready to Secure Your Infrastructure?</h2>
+            <p>Request a strategic consultation session with our team today.</p>
+            <form id="consultation-form" onsubmit="return validateForm()">
+                <input type="email" id="consultation-email" placeholder="Enter your professional email address" required>
+                <button type="submit" class="cta-button">Request Consultation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid container">
+            <div>
+                <h5>Services</h5>
+                <p>Managed IT Support • Data Security • Cloud Strategy • IT Infrastructure</p>
+            </div>
+            <div>
+                <h5>Location & Contact</h5>
+                <p><strong>Duttern Consultant</strong></p>
+                <p>Premium IT Infastrcture Partners based in Midrand, South Africa.</p>
+                <p>Call: +27 21 123 4567</p>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <p>Privacy Policy • Terms of Service • © 2026 Duttern Consultant</p>
+                <p class="designer-credit">Designed & Developed by <a href="#" target="_blank">Framework Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/* --- Global Variables & Overrides --- */
+:root {
+    --navy-blue: #0A1931; /* Primary Deep Navy */
+    --white: #ffffff; /* Background Canvas */
+    --teal-accent: #00adb5; /* High Energy Call To Action */
+    --light-gray: #eeeeee; /* Border & Divider System */
+    --text-muted: #8a99ad; 
+    --font-stack: 'Roboto', 'Arial', san-serif;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--white);
+    color: var(--navy-blue);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 5%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+/* --- Sticky Navbar --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 25, 49, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 48px; /* Perfectly scales visual assets in the navigation bar */
+    width: auto;
+    display: block;
+    transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+    .brand-logo:hover {
+        transform: scale(1.03);
+    }
+
+.navbar nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+    .navbar nav a:hover {
+        color: var(--teal-accent);
+    }
+
+/* --- Services Layout Architecture --- */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--teal-accent);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+}
+
+.service-card ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+}
+
+/* --- Team Hierarchy Layout --- */
+.dark-section {
+    background-color: var(--navy-blue);
+    color: var(--white);
+}
+
+.team-hierarchy {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.team-tier {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 6px;
+    min-width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .team-card:hover {
+        background: var(--white);
+        color: var(--navy-blue);
+        border-color: var(--teal-accent);
+        transform: scale(1.05);
+    }
+
+    .team-card h4 {
+        margin: 0 0 5px 0;
+        font-size: 1.1rem;
+    }
+
+    .team-card .role {
+        font-size: 0.85rem;
+        color: var(--teal-accent);
+        font-weight: bold;
+    }
+
+.insight-box {
+    background: rgba(0, 173, 181, 0.1);
+    border: 1px dashed var(--teal-accent);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    min-height: 24px;
+}
+
+/* --- Lead Acquisition Placement Systems --- */
+#consultation-form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#consultation-email {
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button {
+    background-color: var(--teal-accent);
+    color: var(--white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .cta-button:hover {
+        background-color: #008C94;
+    }
+
+/* --- Structural Footer Layout --- */
+footer {
+    background-color: #050d1a;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer h5 {
+    color: var(--white);
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+/* --- Freelance Credit Links --- */
+.designer-credit {
+    font-size: 0.8rem;
+    margin-top: 12px;
+    opacity: 0.8;
+}
+
+    .designer-credit a {
+        color: var(--teal-accent);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s ease;
+    }
+
+        .designer-credit a:hover {
+            text-decoration: underline;
+            color: #00cbd4;
+        }
